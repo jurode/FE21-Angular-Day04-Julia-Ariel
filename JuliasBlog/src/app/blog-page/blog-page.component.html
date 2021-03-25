@@ -1,0 +1,8 @@
+<h2 class="display-6">Latest Blog articles</h2>
+
+<div *ngFor="let entry of blogEntries" class="container my-2 p-4 border">
+    <h3>{{entry.title}}</h3>
+    <p>{{entry.date}}, in {{entry.place}} by {{entry.aName}}</p>
+    <hr>
+    <p>{{entry.content}}</p>
+</div>
